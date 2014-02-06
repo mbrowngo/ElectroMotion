@@ -1,0 +1,129 @@
+@charset "utf-8";
+body  {
+	font: 80% Verdana, Arial, Helvetica, sans-serif;
+text-align:left;
+	color: #000000;
+	background-color:#BDE0A1;
+	background-image:url(graphics/logosymbol.png);
+	background-repeat:repeat;
+}
+
+dl li { list-style-type:none }
+
+.container { 
+	margin: 0 auto;  
+	margin-top:2em;
+	margin-bottom:2em;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}  
+
+.innercontainer { 
+	background-image:url(graphics/bkgdmiddle.png);
+	background-repeat:repeat-y;
+}  
+
+.navheader { 
+	
+	padding: 0 10px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	margin-left:5px;
+	background-image:url(graphics/emlogobottomplaceholderALT.png);
+	background-repeat:no-repeat;
+	height:64px;
+} 
+.header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+.mainContent {
+	padding:0; /* padding here creates white space "inside the box." */
+	text-align:left;
+} 	
+
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.clear {
+clear:both;
+}
+a {
+	text-decoration:none;
+	font-weight:bold;
+	color:#293189;
+}
+a:hover {
+	color:#ed2625;
+}
+
+#header a {
+	text-decoration:none;
+	font-weight:bold;
+	color:#293189;
+}
+#header a:hover {
+	color:#ed2625;
+}
+
+
+
+.black {
+	color:#000000;
+}
+
+.blue {
+	color:#293189;
+}
+
+.red {
+	color:#ed2625;
+}
+
+.yellow {
+	color:#000;
+    background-color:#FFFF33;
+	padding:3px;
+}
+
+.heading {
+	font-weight:bold;
+}
+.smalltext {
+	font-size:80%;
+}
+
+h1, h2, h3, h4 {color:#000099}
+
+ul li .callus { 
+	list-style-image:url(graphics/lightningsmall.png)
+}
+/*
+#navheader a, #header a {color:#ffffff;text-decoration:none;}
+#navheader a:hover, #header a:hover {color:#ff0000;}
+ Form Styling */
+
+.formformat label {float:left; width:11.0em; display:block; margin-right:0.8em; text-align:right;}
+.formformat label.nobreak {margin-left:.2em;display:inline;float:none;text-align:left}
+.formformat p {margin:0.5em 0; clear:left}
+.formformat object {float:left; width:70%; margin:0.5em;}
+.formformat p.check span {padding-left:11.8em; float:left; clear:left; display:block; width:78%;}
+.formformat p.check label,.formformat p.check2 label{width:auto; float:none; display:inline; margin:0; text-align:left}
+.formformat p.check span.name {width:11em; clear:none; padding:0; text-align:right; margin:.5em 0 .5em 0;}
+.formformat p.check span.first{clear:none; padding-left:0.8em; margin:.5em 0 0 0;width:55%;}
+.formformat p.check2 span {padding-left:5.0em; float:left; clear:left; display:block; width:78%;}
+.formformat p.check2 span.info {width:45em; clear:none; padding:0; text-align:left; margin:.5em 0 .5em 0;display:block;}
+.formformat fieldset {width:98%; border:0; border-top:2px Solid #325B77;}
+.formformat legend {color:#3F8A00; font-weight:bold;}
+.formformat p.info {clear:left;padding-left:12.5em;padding-top:1.2em;}
